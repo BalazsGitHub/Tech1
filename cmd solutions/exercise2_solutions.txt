@@ -13,6 +13,7 @@ new-item on.txt
 
 5: output the sizes of the files in the directory ?
 dir
+(get-childitem | select-object -index 0).length
 
 6: delete the last folder you created
 rm foldername
