@@ -1,0 +1,8 @@
+1. Add .idea to the global gitignore
+
+2. Remove all .idea related things from version control
+
+3. Make sure that .idea is not in your repository and that it won't be added next time you do `git add -A`
+
+
+
