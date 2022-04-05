@@ -1,0 +1,71 @@
+DATABASES
+
+
+List 6 relational databases:
+- MySQL
+- Oracle
+- PostgreSQL
+- MariaDB
+- Microsoft SQL Server
+- Amazon Aurora
+
+List at least 1 of each of the NoSQL categories:
+
+- Column-Based: Big table, Cassandra, Hbase, Hypertable
+- Graph-Based: Neo4j, InfoGrid, Infinite Graph, Flock DB,
+- Document-Based : MongoDB, CouchDB, OrientDB, RavenDB,
+- Key-value: Riak, Tokyo cabinet, Redis server
+
+List 2 in-memory databases:
+- Aerospike
+- Apache Ignite 
+- -H2(DBMS)
+
+
+Relational databases vs. NoSQL databases: 
+
+- Key-Value Stores:
+Where relational Databases store information in tables, key value databases store data in key-value pairs. 
+Key value databases are often used as a cache on top of a persistent data layer. 
+Key value databases don’t perform queries and they don’t have schemas.
+
+
+- Document Databases:
+It stores and retrieves data as a key value pair but the value part is stored as a document. 
+The document is stored in JSON or XML formats. The value is understood by the DB and can be queried.
+In a relational database, you must define a schema before you add data (records) to the database.
+A document database contains documents that are added as records that describe the data in the document.
+A document database stores documents, so unlike relational databases that use schemas, where you need to define the rows and the type of data to be stored, documents can be as complex as you choose.
+
+
+
+- Columnar database:
+Stores data in columns instead of rows.
+Efficiently writes and reads data to and from hard disk storage, which greatly improves disk I/O performance.
+Particularly helpful for data analytics and data warehousing.
+Differences from other databases:
+Faster performance compared to a row-oriented ones.
+It can store more data in a smaller amount of memory. 
+Only the columns that need to be used are retrieved. This makes it possible for a columnar database to scale efficiently and handle large amounts of data.
+
+- Graph databases:
+Relational databases are table-based. NoSQL databases can be document based, graph databases, key-value pairs, or wide-column stores.
+The main difference is the way relationships between entities are stored. In a graph database relationships are stored at the individual record level, while a relational database uses predefined structures, a.k.a. table definitions. Unlike a relational database, a graph database is structured entirely around data relationships.
+Graph databases treat relationships not as a schema structure but as data, like other values.
+Pro:
+Due to the tabular model restriction, aggregate queries on a relational database are greatly constrained by how data is grouped together. In contrast, graph models are more flexible for grouping and aggregating relevant data.
+Con:
+Graph databases are not as useful for operational use cases because they are not efficient at processing high volumes of transactions and they are not good at handling queries that span the entire database.
+
+
+Other considerations:
+
+- In-memory databases vs. persistent:
+The main difference between a persistent and an in-memory database is where the data is stored. 
+An in-memory database uses RAM as the storage. A persistent database uses some persistent storage media, 
+typically a spinning disk (hard disk drive or HDD) or a solid state disk (SSD). 
+
+
+
+
+
